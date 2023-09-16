@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Таблица данных</title>
+  </head>
+  <body>
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">First Name</th>
+          <th onclick="sortTable(1)">Last Name</th>
+          <th onclick="sortTable(2)">Phone</th>
+          <th onclick="sortTable(3)">Address</th>
+          <th onclick="sortTable(4)">City</th>
+          <th onclick="sortTable(5)">State</th>
+          <th onclick="sortTable(6)">Zip</th>
+        </tr>
+      </thead>
+      <tbody id="data-body"></tbody>
+    </table>
+
+    <div class="pagination">
+      <button onclick="previousPage()">Previous</button>
+      <button onclick="nextPage()">Next</button>
+    </div>
+
+    <script src="./tableData.js"></script>
+  </body>
+</html>
